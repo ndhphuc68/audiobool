@@ -15,3 +15,8 @@ web-build/
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
+
+
+https://audio-book-a995a.firebaseapp.com/__/auth/handler
+
+org.gradle.java.home=C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.17.8-hotspot
