@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Audio_Book",
+    "name": "Audio Book",
     "slug": "Audio_Book",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,13 +21,20 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.audiobook.phuc",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/perf",
+      "@react-native-firebase/crashlytics"
+    ]
   }
 }

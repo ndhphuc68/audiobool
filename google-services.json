@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "815894260691",
+    "project_id": "audio-book-a995a",
+    "storage_bucket": "audio-book-a995a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815894260691:android:cbfd4b9db7711be72b5d26",
+        "android_client_info": {
+          "package_name": "com.audiobook.phuc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJl5dsZGoYN5JgJ0GHwEZa-7CJMTrg5to"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
