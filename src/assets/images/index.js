@@ -7,4 +7,5 @@ export const ImageCode = {
   google: require("./google.png"),
   twitter: require("./twitter.png"),
   facebook: require("./facebook.png"),
+  huray: require("./Huray.png"),
 };

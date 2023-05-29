@@ -12,10 +12,25 @@ import store from "./redux/store";
 import { Provider } from "react-redux";
 import WelcomeScreen from "./screens/Welcome/WelcomeScreen";
 import PersonalizationScreen from "./screens/Personalization/PersonalizationScreen";
+import LoadingScreen from "./screens/Loading/LoadingScreen";
+import HomePageScreen from "./screens/HomePage/HomePageScreen";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function App() {
+  const TabBar = () => {
+    return (
+      <Tab.Navigator
+        initialRouteName={ScreenName.homepage}
+        screenOptions={{ headerShown: false }}
+      >
+        <Tab.Screen name={ScreenName.homepage} component={HomePageScreen} />
+      </Tab.Navigator>
+    );
+  };
+
   return (
     <Provider store={store}>
       <AlertNotificationRoot>
@@ -47,6 +62,12 @@ export default function App() {
                 component={PersonalizationScreen}
                 options={{ headerShown: false }}
               />
+              <Stack.Screen
+                name={ScreenName.loading}
+                component={LoadingScreen}
+                options={{ headerShown: false }}
+              />
+              <Stack.Screen name="aaaa" component={TabBar} />
             </Stack.Navigator>
           </NavigationContainer>
         </NativeBaseProvider>

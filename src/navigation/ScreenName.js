@@ -4,4 +4,6 @@ export const ScreenName = {
   register: "Register",
   welcome: "Welcome",
   personalization: "Personalization",
+  loading: "Loading",
+  homepage: "aaaa",
 };
