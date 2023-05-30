@@ -8,4 +8,5 @@ export const ImageCode = {
   twitter: require("./twitter.png"),
   facebook: require("./facebook.png"),
   huray: require("./Huray.png"),
+  logoSmall: require("./logosmall.png"),
 };

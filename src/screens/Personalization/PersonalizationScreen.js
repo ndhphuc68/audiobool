@@ -29,7 +29,6 @@ const { width, height } = Dimensions.get("window");
 
 export default function PersonalizationScreen() {
   const navigation = useNavigation();
-
   const dispatch = useDispatch();
 
   const uid = "S5LGavQfbPeMMNp3e3fnbhDpk0u1";
@@ -179,7 +178,11 @@ export default function PersonalizationScreen() {
               hands.
             </Text>
             <Button
-              onPress={() => navigation.navigate(ScreenName.homepage)}
+              onPress={() =>
+                navigation.navigate(ScreenName.bottomtab, {
+                  screen: ScreenName.homepage,
+                })
+              }
               height={16}
               w="100%"
               backgroundColor={Colors.primary50}

@@ -5,5 +5,9 @@ export const ScreenName = {
   welcome: "Welcome",
   personalization: "Personalization",
   loading: "Loading",
-  homepage: "aaaa",
+  bottomtab: "BottomTab",
+  homepage: "Homepage",
+  library: "Library",
+  search: "Search",
+  detailcategory: "DetailCategory",
 };
